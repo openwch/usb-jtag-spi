@@ -24,7 +24,7 @@
   
   |--------USB20_DRIVER: USB Windows driver, supports USB FS(12MBps)/HS(480MBps)/SS(5GBps), supports WIN2000/XP, 32/64-bit WIN7/8/8.1/10/11 operating system.
   
-  |                                  Download link: http://www.wch.cn/downloads/CH372DRV_EXE.html
+  |                                  Download link: http://www.wch-ic.com/downloads/CH372DRV_EXE.html
   
   |-- sch   
   
@@ -50,6 +50,6 @@
   
   |-------- MCU IDE(MounRiver)：http://www.mounriver.com/download
   
-  |-------- MCU ISP Tool：http://www.wch.cn/downloads/WCHISPTool_Setup_exe.html
+  |-------- MCU ISP Tool：http://www.wch-ic.com/downloads/WCHISPTool_Setup_exe.html
 
   
