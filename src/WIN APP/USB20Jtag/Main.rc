@@ -1,0 +1,202 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  22, 17, 168, 75
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "System"
+BEGIN
+    ICON            IDI_Main,IDC_MYICON,14,9,20,20
+    LTEXT           "PramFrame Version 1.0",IDC_STATIC,49,10,91,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,49,20,119,8
+    DEFPUSHBUTTON   "OK",IDOK,61,39,30,11,WS_GROUP
+END
+
+IDD_MainWnd_EN DIALOGEX 0, 0, 502, 356
+STYLE DS_SETFONT | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Usb20ToJtag Debug"
+FONT 10, "黑体", 400, 0, 0x86
+BEGIN
+    EDITTEXT        IDC_InforShow,6,197,490,138,ES_MULTILINE | ES_OEMCONVERT | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    GROUPBOX        "JTAG TAP Operation",IDC_STATIC,6,20,490,138
+    PUSHBUTTON      "CloseDevice",IDC_CloseDevice,335,4,74,16
+    LTEXT           "DeviceList:",IDC_STATIC,7,8,45,8
+    COMBOBOX        IDC_ObjList,55,6,159,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "RefreshDevice",IDC_RefreshObjList,216,4,58,16
+    PUSHBUTTON      "ClearShow",IDC_ClearInfor,411,338,78,16
+    PUSHBUTTON      "OpenDevice",IDC_OpenDevice,411,4,78,16
+    EDITTEXT        IDC_JtagOut,140,90,265,29,ES_MULTILINE | ES_UPPERCASE | WS_VSCROLL
+    EDITTEXT        IDC_JtagOutLen,111,90,25,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "JTAG Byte Write(D3)",IDC_Jtag_ByteWrite,411,90,78,16
+    PUSHBUTTON      "JTAG TAP State Switch",IDC_JtagState_Switch,140,173,109,16
+    COMBOBOX        IDC_JtagTapState,10,175,128,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_JtagInLen,111,123,25,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_JtagIn,140,123,265,29,ES_MULTILINE | ES_UPPERCASE | WS_VSCROLL
+    LTEXT           "Byte data write (little endian) length:",IDC_JtagOutLenName,15,88,93,16
+    LTEXT           "Byte data read(little endian)length:",IDC_JtagInLenName,15,120,88,18
+    PUSHBUTTON      "JTAG Byte Read(D4)",IDC_Jtag_ByteRead,411,123,78,16
+    COMBOBOX        IDC_JtaShiftgChannel,85,32,73,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "JTAG Target Init",IDC_Jtag_InitTarget,257,173,109,16
+    COMBOBOX        IDC_JtagClockRate,332,32,73,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "JtagConfig(D0)",IDC_JtagIfConfig,411,31,78,16
+    PUSHBUTTON      "JTAG Download Fw",IDC_Jtag_DnFile_Exam,374,173,109,16
+    GROUPBOX        "Jtag Target Device Operation example",IDC_STATIC,6,162,490,32
+    LTEXT           "RegisterType:",IDC_STATIC,19,34,62,8
+    LTEXT           "JTAG TCK Clock:",IDC_STATIC,268,34,60,8
+    PUSHBUTTON      "JTAG Bit Write(D1) ",IDC_Jtag_BitWrite,411,49,78,16
+    PUSHBUTTON      "JTAG Bit Read(D2)",IDC_Jtag_BitRead,411,69,78,16
+    COMBOBOX        IDC_DataTransFunc,162,32,70,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_JtagInBitLen,111,71,25,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "BinaryDataRead(MSB)bits:",IDC_JtagOutLenName2,15,73,95,8
+    EDITTEXT        IDC_JtagOutBit,140,51,265,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_JtagOutBitLen,111,51,25,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "BinaryDataWrite(MSB)bits:",IDC_JtagOutLenName3,11,53,99,8
+    EDITTEXT        IDC_JtagInBit,140,71,265,12,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_Main                ICON                    "Main.ICO"
+IDI_SMALL               ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_PRAMFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "http://wch.cn"
+            VALUE "FileDescription", "Usb20ToJtag Demo"
+            VALUE "FileVersion", "1, 0, 0, 0"
+            VALUE "InternalName", "Usb20ToJtagDemo"
+            VALUE "LegalCopyright", "Copyright WCH 2022"
+            VALUE "OriginalFilename", "Usb20ToJtagDemo.exe"
+            VALUE "ProductName", "Usb20ToJtagDemo"
+            VALUE "ProductVersion", "1, 0, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "PramFrame"
+    IDS_HELLO               "Hello World!"
+    IDC_PRAMFRAME           "PRAMFRAME"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

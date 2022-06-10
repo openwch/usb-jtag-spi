@@ -1,0 +1,13 @@
+Mcu Type=CH32V30x
+Address=0x08000000
+Target Path=obj\USB_JTAG_SPI_CH32V30x.hex
+Erase All=false
+Program=true
+Verify=true
+Reset=true
+Virtual=true
+
+
+Vendor=WCH
+MCU=CH32V307VCT6
+Link=WCH-Link

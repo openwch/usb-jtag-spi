@@ -1,0 +1,196 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  22, 17, 168, 75
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "System"
+BEGIN
+    ICON            IDI_Main,IDC_MYICON,14,9,20,20
+    LTEXT           "PramFrame Version 1.0",IDC_STATIC,49,10,91,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,49,20,119,8
+    DEFPUSHBUTTON   "OK",IDOK,61,39,30,11,WS_GROUP
+END
+
+IDD_MainWnd DIALOGEX 0, 0, 514, 393
+STYLE DS_SETFONT | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "USB2.0 SPI Flash Programmer"
+FONT 10, "宋体", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Close Device",IDC_CloseDevice,320,13,86,16
+    EDITTEXT        IDC_InforShow,5,239,504,134,ES_MULTILINE | ES_OEMCONVERT | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "ClearInfor",IDC_ClearInfor,416,375,78,16
+    LTEXT           "DeviceList:",IDC_STATIC,10,17,38,8
+    COMBOBOX        IDC_ObjList,52,15,156,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Refresh Device",IDC_RefreshObjList,210,13,78,16
+    PUSHBUTTON      "Flash Identify",IDC_FlashIdentify,412,65,93,16
+    PUSHBUTTON      "Flash Erase(C2)",IDC_FlashErase,412,119,93,16
+    PUSHBUTTON      "Flash BlockRead(C3)",IDC_FlashRead,412,83,93,16
+    PUSHBUTTON      "Flash Write(C2)",IDC_FlashWrite,412,101,93,16
+    LTEXT           "StartAddr:0x",IDC_STATIC,9,69,48,8
+    EDITTEXT        IDC_FlashStartAddr,60,67,72,12,ES_AUTOHSCROLL
+    RTEXT           "Len:0x",IDC_STATIC,144,68,29,8
+    EDITTEXT        IDC_FlashDataSize,177,67,33,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FlashData,10,83,399,149,ES_MULTILINE | ES_UPPERCASE | ES_WANTRETURN | WS_VSCROLL,WS_EX_STATICEDGE
+    PUSHBUTTON      "Flash SpeedTest",IDC_FlashRWSpeedTest,412,215,93,16
+    PUSHBUTTON      "WriteFlashFromFile(C4)",IDC_WriteFormFile,412,167,93,16
+    PUSHBUTTON      "ReadFlashToFile(C3)",IDC_ReadToFile,412,150,93,16
+    COMBOBOX        IDC_SpiCfg_Mode,52,34,78,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SpiCfg_Clock,185,34,78,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SpiCfg_ChipIndex,331,34,78,113,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "SPI Config",IDC_CMD_InitSPI,412,32,93,16
+    PUSHBUTTON      "Open Device",IDC_OpenDevice,412,13,93,16
+    RTEXT           "SPI Mode:",IDC_STATIC,9,36,39,8
+    RTEXT           "SPI Clock:",IDC_STATIC,142,36,41,8
+    GROUPBOX        "USB2.0 SPI <==> Flash(W25Q64)",IDC_STATIC,5,56,504,180
+    PUSHBUTTON      "FlashVerify(C2)",IDC_FlashVerify,412,184,93,16
+    RTEXT           "ChipSelectPin:",IDC_STATIC,270,36,57,8
+    GROUPBOX        "USB2.0 SPI Config",IDC_STATIC,5,2,504,52
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_Main                ICON                    "Main.ICO"
+IDI_SMALL               ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_PRAMFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "http://wch.cn"
+            VALUE "FileDescription", "NullWin32App"
+            VALUE "FileVersion", "1, 0, 0, 0"
+            VALUE "InternalName", "NullWin32App"
+            VALUE "LegalCopyright", "Copyright WCH 2002"
+            VALUE "OriginalFilename", "NullWin32App.exe"
+            VALUE "ProductName", "NullWin32App"
+            VALUE "ProductVersion", "1, 0, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "PramFrame"
+    IDS_HELLO               "Hello World!"
+    IDC_PRAMFRAME           "PRAMFRAME"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
